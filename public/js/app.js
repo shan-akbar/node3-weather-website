@@ -15,7 +15,16 @@ weatherForm.addEventListener('submit', (e) =>{
     e.preventDefault()
     const location = search.value
 
-    messageOne.textContent = 'Loading...'
+    messageTwo.textContent = ''
+    messageThree.textContent = ''
+    messageFour.textContent = ''
+    messageFive.textContent = ''
+    messageSix.textContent = ''
+    messageSeven.textContent = ''
+    messageEight.textContent = ''
+    messageNine.textContent = ''
+    messageTen.textContent = ''
+
     const url = '/weather?search=' + location
     fetch(url).then((response)=>{
     response.json().then((data)=>{
