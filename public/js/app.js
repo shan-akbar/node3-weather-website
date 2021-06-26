@@ -18,7 +18,8 @@ weatherForm.addEventListener('submit', (e) =>{
         } else {
             messageOne.textContent = data.Location
             messageTwo.textContent = data.Forecast.weather_desc + ', It is ' + data.Forecast.temp + 
-            ' degrees out there, but it feels like ' + data.Forecast.feels_like_temp + ' degrees.'
+            ' degrees out there, but it feels like ' + data.Forecast.feels_like_temp + ' degrees.' +
+            ' There are ' + data.Forecast.rain_prob + '% chance of rain.'
         }
     })
 })
